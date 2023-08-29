@@ -1,0 +1,59 @@
+.intro {
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  app-intro {
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+}
+.background {
+  .header {
+    @media screen and (max-width: 1024px) {
+      width: 150px;
+      height: 30px;
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .footer {
+    @media screen and (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+      background-color: darkgray;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+  }
+}
+.right-panel {
+  .backToIntro {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+  .backToIntro:hover {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+}

@@ -1,0 +1,5 @@
+<ul class="tab-list">
+  <li class="tab" [class.activeTab]="activeTab === 'autobiography'" (click)="tabClicked.emit('autobiography')">About Me</li>
+  <li class="tab" [class.activeTab]="activeTab === 'edu-and-work'" (click)="tabClicked.emit('edu-and-work')">Education & WorkExperience</li>
+  <li class="tab" [class.activeTab]="activeTab === 'skill'" (click)="tabClicked.emit('skill')">Skills</li>
+</ul>
